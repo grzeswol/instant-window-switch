@@ -28,11 +28,11 @@ cd instant-switch
 
 2. (Optional) Configure the virtual desktop behavior to switch windows across all virtual desktops:
 Open ```contents/code/main.js ``` and change
-```json
+```javascript
  includeAllVirtualDesktops: false
  ```
 to
-```json
+```javascript
  includeAllVirtualDesktops: true
  ```
 

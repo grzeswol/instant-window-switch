@@ -13,7 +13,7 @@
         "Id": "instant-window-switch",
         "Version": "1.0",
         "License": "GPLv3",
-        "Website": "https://github.com/username/myscript"
+        "Website": "https://github.com/grzeswol/instant-window-switch"
     },
     "X-Plasma-API": "javascript",
     "X-Plasma-MainScript": "code/main.js",

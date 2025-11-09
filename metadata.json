@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Name": "Instant Window Switch",
+        "Description": "Switch immediately between windows of the same app when pressing Meta+`",
+        "Icon": "preferences-system-windows",
+        
+        "Authors": [
+            {
+                "Email": "grzeswol@gmail.com",
+                "Name": "grzeswol"
+            }
+        ],
+        "Id": "instant-window-switch",
+        "Version": "1.0",
+        "License": "GPLv3",
+        "Website": "https://github.com/username/myscript"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}

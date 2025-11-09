@@ -23,7 +23,7 @@ This script replaces that behavior with instant window activation.
 
 ```bash
 git clone https://github.com/grzeswol/instant-window-switch.git
-cd instant-switch
+cd instant-window-switch
 ```
 
 2. (Optional) Configure the virtual desktop behavior to switch windows across all virtual desktops:

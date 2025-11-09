@@ -1,14 +1,25 @@
+const config = {
+    includeAllVirtualDesktops: false // Option to include cycling through app windows opened in different virtual desktops 
+}
+
 function switchNextWindow() {
     const active = workspace.activeWindow;
     if (!active) {
         return;
     }
 
-    const windows = workspace.stackingOrder;
-    const sameApp = windows.filter(w =>
-    w.resourceClass === active.resourceClass && w !== active && w.normalWindow
-    );
+    var sameApp;
 
+    const windows = workspace.stackingOrder;
+    if(config.includeAllVirtualDesktops) {
+        sameApp = windows.filter(w => w.resourceClass === active.resourceClass && w !== active && w.normalWindow);
+    }
+    else {
+        const currentDesktop = workspace.currentDesktop;
+        sameApp = windows.filter(w => w.resourceClass === active.resourceClass && w !== active && w.normalWindow
+            && (w.desktops.includes(currentDesktop) || w.onAllDesktops));        
+    }
+    
     if (sameApp.length === 0) {
         return;
     }
